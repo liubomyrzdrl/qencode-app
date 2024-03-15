@@ -5,12 +5,11 @@ import {eyeOff} from 'react-icons-kit/feather/eyeOff';
 import { eye } from 'react-icons-kit/feather/eye'
 import "./styles.css";
 
-const InputField = ({ value, typeField, onChange, placeholder }) => {
+const InputField = ({ register, typeField, placeholder }) => {
 
 const [type, setType] = useState(typeField);
 const [icon, setIcon] = useState(eyeOff);
   
-console.log("InputField", eye)
  const handleToggle = () => { 
     if (type==='password'){
         setIcon(eye);
@@ -25,14 +24,13 @@ console.log("InputField", eye)
     <>
       <input
         className="input-field"
-        type={typeField}
+        type={type}
         placeholder={placeholder}
-        onChange={onChange}
-        value={value}
+        {...register(typeField, { required: true, maxLength: 20 })}
       />
       {typeField === 'password' && 
-        <span className="flex justify-around items-center" onClick={handleToggle}>
-        <Icon className="absolute mr-10" style={{ color: '#D3D8DC' }} icon={icon} size={25} />
+        <span className="hide-password-icon" onClick={handleToggle}>
+        <Icon  style={{ color: '#67717B' }} icon={icon} size={15} />
       </span>}
     
     </>

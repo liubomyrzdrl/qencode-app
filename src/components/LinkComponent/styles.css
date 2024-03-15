@@ -1,0 +1,10 @@
+a {
+    text-decoration: none;
+    color: #316FEA;
+}
+
+.link-component {
+    display: flex;
+    justify-content: end;
+    padding: 12px  0 12px 0;
+}

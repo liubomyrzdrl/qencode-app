@@ -3,4 +3,11 @@
     padding: 0px 12px 0px 12px;
     border: 1.2px solid #D3D8DC;
     border-radius: 6px;
+    margin-bottom: 12px;
+}
+
+.hide-password-icon {
+    position: absolute;
+    bottom: 73px;
+    right: 20px;
 }

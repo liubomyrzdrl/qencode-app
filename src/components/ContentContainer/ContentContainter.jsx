@@ -1,4 +1,4 @@
-
+import './styles.css'
 const ContentContainter = ({ children }) => {
     return (
         <div className='content-container'>

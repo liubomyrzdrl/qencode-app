@@ -12,6 +12,7 @@
     }
 }
 .delimiter-conten__inputs {
+    position: relative;
     display: flex;
     flex-direction: column;
 }
