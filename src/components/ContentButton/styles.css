@@ -1,0 +1,12 @@
+.content-btn {
+    height: 48px;
+    width: 100%;
+    border-radius: 8px;
+    border: 0;
+    cursor: pointer;
+}
+
+.primary-btn {
+    background-color: #316FEA;
+    color: #fff;
+}
