@@ -1,0 +1,17 @@
+.delimiter-content {
+    display: flex;
+    align-items: center;
+    width: 400px; 
+    color: #E3E6E9;
+    margin-bottom: 12px;
+    & .delimiter-content__line {
+        height: 1px;
+        width: 50%;
+        margin: "0 0.5em";
+        background-color: #E3E6E9;
+    }
+}
+.delimiter-conten__inputs {
+    display: flex;
+    flex-direction: column;
+}
